@@ -1,4 +1,4 @@
-默认ip10.0.1.1 密码password
+默认ip192.168.100.1 密码password
 刷入方式：
 dd if=/tmp/upload/aaa.img of=/dev/mmcblk0
 
