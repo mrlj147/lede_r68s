@@ -16,3 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# default on dhcp.lan.force
+ehco "uci set dhcp.lan.force=1" >>package/lean/default-settings/files/zzz-default-settings
+ehco "uci commit dhcp" >>package/lean/default-settings/files/zzz-default-settings
