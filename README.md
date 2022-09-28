@@ -1,3 +1,12 @@
+默认ip10.0.1.1 密码password
+
+
+
+
+
+
+
+
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
 # Actions-OpenWrt
