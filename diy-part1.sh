@@ -17,7 +17,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# default on dhcp.lan.force.
+# default on dhcp.lan.force
 sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
 echo "uci set dhcp.lan.force=1" >>package/lean/default-settings/files/zzz-default-settings
 echo "uci commit dhcp" >>package/lean/default-settings/files/zzz-default-settings
