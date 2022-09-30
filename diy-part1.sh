@@ -16,10 +16,12 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/mrlj147/openwrt_helloworld' >>feeds.conf.default
+echo 'src-git src-git mosdns https://github.com/mrlj147/luci-app-mosdns' >>feeds.conf.default
 
 
 # default on dhcp.lan.force
 sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
-echo "uci set dhcp.lan.force=1" >>package/lean/default-settings/files/zzz-default-settings
-echo "uci commit dhcp" >>package/lean/default-settings/files/zzz-default-settings
-echo "exit 0" >>package/lean/default-settings/files/zzz-default-settings
+echo 'uci set dhcp.lan.force=1' >>package/lean/default-settings/files/zzz-default-settings
+echo 'uci commit dhcp' >>package/lean/default-settings/files/zzz-default-settings
+echo 'exit 0' >>package/lean/default-settings/files/zzz-default-settings
