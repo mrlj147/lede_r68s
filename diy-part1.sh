@@ -13,6 +13,15 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+
+#smartdns
+svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
+svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
+
+#adguardhome
+svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome package/adguardhome
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
+
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
@@ -26,6 +35,3 @@ echo 'uci set dhcp.lan.force=1' >>package/lean/default-settings/files/zzz-defaul
 echo 'uci commit dhcp' >>package/lean/default-settings/files/zzz-default-settings
 echo 'exit 0' >>package/lean/default-settings/files/zzz-default-settings
 
-
-svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
-svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
