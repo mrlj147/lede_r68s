@@ -25,3 +25,7 @@ sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
 echo 'uci set dhcp.lan.force=1' >>package/lean/default-settings/files/zzz-default-settings
 echo 'uci commit dhcp' >>package/lean/default-settings/files/zzz-default-settings
 echo 'exit 0' >>package/lean/default-settings/files/zzz-default-settings
+
+
+svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
+svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
