@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: r66s-lede
+name: r66s-lede(test)
 
 on:
   repository_dispatch:
