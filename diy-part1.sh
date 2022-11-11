@@ -22,11 +22,11 @@ svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-ap
 svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome package/adguardhome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 
-# Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git helloworld https://github.com/sbwml/openwrt_helloworld' >>feeds.conf.default
-echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns' >>feeds.conf.default
+
+# openwrt_helloworld
+svn co  https://github.com/sbwml/openwrt_helloworld package/helloworld
+# mosdns
+svn co  https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 
 # default on dhcp.lan.force
