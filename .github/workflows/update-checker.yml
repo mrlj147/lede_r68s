@@ -17,8 +17,8 @@ env:
 
 on:
   workflow_dispatch:
- schedule:
-   - cron: 0 0 10,14,16 * * 
+schedule:
+   - cron: 0 */18 * * *
 
 jobs:
   check:
