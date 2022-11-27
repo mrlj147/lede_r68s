@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: r68s-lede
+name: LEDE(X86)带docker
 
 on:
   repository_dispatch:
