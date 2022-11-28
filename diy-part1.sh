@@ -13,6 +13,7 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+rm -rf feeds\luci\applications\luci-app-mosdns
 
 #smartdns
 svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
