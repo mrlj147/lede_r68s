@@ -26,13 +26,6 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome pa
 
 # openwrt_helloworld
 svn co  https://github.com/sbwml/openwrt_helloworld package/helloworld
-# mosdns
-svn co  https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
-svn co  https://github.com/sbwml/v2ray-geodata package/geodata
 
 
-# default on dhcp.lan.force
-sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
-echo 'uci set dhcp.lan.force=1' >>package/lean/default-settings/files/zzz-default-settings
-echo 'uci commit dhcp' >>package/lean/default-settings/files/zzz-default-settings
-echo 'exit 0' >>package/lean/default-settings/files/zzz-default-settings
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash package/luci-app-openclash
