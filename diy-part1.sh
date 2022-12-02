@@ -19,6 +19,9 @@ rm -rf feeds\luci\applications\luci-app-mosdns
 svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
 svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
 
+Openclash
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash package/luci-app-openclash
+
 #adguardhome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome package/adguardhome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
