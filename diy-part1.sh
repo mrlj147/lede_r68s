@@ -13,7 +13,6 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-rm -rf feeds\luci\applications\luci-app-mosdns
 
 #smartdns
 svn co https://github.com/pymumu/openwrt-smartdns package/smartdns
@@ -29,9 +28,6 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome pa
 
 # openwrt_helloworld
 svn co  https://github.com/sbwml/openwrt_helloworld package/helloworld
-# mosdns
-svn co  https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
-svn co  https://github.com/sbwml/v2ray-geodata package/geodata
 
 
 # default on dhcp.lan.force
